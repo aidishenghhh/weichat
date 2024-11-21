@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>微信名片生成器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>微信名片生成器</h1>
+    <div class="input-group">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" placeholder="请输入您的姓名">
+    </div>
+    <div class="input-group">
+        <label for="position">职位:</label>
+        <input type="text" id="position" placeholder="请输入您的职位">
+    </div>
+    <div class="input-group">
+        <label for="contact">联系方式:</label>
+        <input type="text" id="contact" placeholder="请输入您的联系方式">
+    </div>
+    <button onclick="generateCard()">生成名片</button>
+    <div id="card" class="card"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
